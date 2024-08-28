@@ -27,12 +27,12 @@ public class ActualizarCantidadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actualizarcantidad);
 
-        // Initialize the EditTexts and Button
+
         etNombre = findViewById(R.id.etNombre);
         etNcantidad = findViewById(R.id.etNcantidadProducto);
         btnActualizarCantidad = findViewById(R.id.btnActualizarCantidad);
 
-        // Set onClickListener for the button
+
         btnActualizarCantidad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,7 +97,5 @@ public class ActualizarCantidadActivity extends AppCompatActivity {
                 if (fos != null) fos.close();
             } catch (Exception e) {
                 e.printStackTrace();
-            }
-        }
-    }
+            }}}
 }

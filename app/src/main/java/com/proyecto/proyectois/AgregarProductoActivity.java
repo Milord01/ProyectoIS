@@ -57,13 +57,13 @@ public class AgregarProductoActivity extends AppCompatActivity {
         FileOutputStream fileOutputStream = null;
 
         try {
-            // Abre el archivo en modo append (agregar)
+
             fileOutputStream = openFileOutput(FILE_NAME, MODE_APPEND);
             fileOutputStream.write(textoAsalvar.getBytes());
             Toast.makeText(AgregarProductoActivity.this, "Producto agregado exitosamente", Toast.LENGTH_SHORT).show();
             Log.d("TAG1", "Fichero salvado en: " + getFilesDir() + "/" + FILE_NAME);
 
-            // Limpiar campos
+
             etNombre.setText("");
             etPrecio.setText("");
             etCantidad.setText("");
@@ -75,10 +75,7 @@ public class AgregarProductoActivity extends AppCompatActivity {
                     fileOutputStream.close();
                 } catch (Exception e) {
                     e.printStackTrace();
-                }
-            }
-        }
-    }
+                }}}}
 
     private boolean isProductExists(String nombre) {
         FileInputStream fileInputStream = null;
@@ -100,9 +97,6 @@ public class AgregarProductoActivity extends AppCompatActivity {
                     fileInputStream.close();
                 } catch (Exception e) {
                     e.printStackTrace();
-                }
-            }
-        }
-        return false;  //
-    }
+                }}}
+        return false;}
 }

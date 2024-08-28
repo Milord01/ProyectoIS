@@ -25,12 +25,12 @@ public class ActualizarPrecioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actualizarprecio);
 
-        // Initialize the EditTexts and Button
+
         etNombre = findViewById(R.id.etNombre);
         etNPrecio = findViewById(R.id.etNprecioProducto);
         btnActualizarPrecio = findViewById(R.id.btnActualizarPrecio);
 
-        // Set onClickListener for the button
+
         btnActualizarPrecio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,5 +97,4 @@ public class ActualizarPrecioActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-    }
-}
+    }}
