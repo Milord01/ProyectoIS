@@ -25,7 +25,7 @@ public class RevisarInventarioActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         itemList = new ArrayList<>();
 
-        // Cargar los datos del archivo de texto
+
         cargarListaDesdeArchivo();
 
         // Configurar el adaptador para mostrar los datos en el ListView usando el diseño personalizado
@@ -57,10 +57,7 @@ public class RevisarInventarioActivity extends AppCompatActivity {
                     itemList.add(item);
 
                     Log.d("RevisarInventario", "Item añadido: " + item);
-                }
-            }
-
-        } catch (IOException e) {
+                }}} catch (IOException e) {
             e.printStackTrace();
         } finally {
             if (reader != null) {
@@ -68,15 +65,10 @@ public class RevisarInventarioActivity extends AppCompatActivity {
                     reader.close();
                 } catch (IOException e) {
                     e.printStackTrace();
-                }
-            }
+                }}
             if (inputStream != null) {
                 try {
                     inputStream.close();
                 } catch (IOException e) {
                     e.printStackTrace();
-                }
-            }
-        }
-    }
-}
+                }}}}}
